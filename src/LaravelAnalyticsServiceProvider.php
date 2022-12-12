@@ -20,15 +20,21 @@ class LaravelAnalyticsServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-analytics')
-            ->hasConfigFile()
             ->hasViews()
             ->hasViewComponents('analytics', Analytics::class, Dashboard::class, Chart::class)
             ->hasRoute('web')
             ->hasMigration('create_page_views_table')
             ->hasInstallCommand(function (InstallCommand $command) {
                 $command
+                    ->startWith(function (InstallCommand $command) {
+                        $command->info('Thanks for installing Laravel Analytics!');
+                    })
                     ->publishMigrations()
-                    ->askToStarRepoOnGitHub('lancodev/laravel-analytics');
+                    ->askToRunMigrations()
+                    ->askToStarRepoOnGitHub('lancodev/laravel-analytics')
+                    ->endWith(function (InstallCommand $command) {
+                        $command->info('All done! Enjoy using Laravel Analytics!');
+                    });
             });
     }
 }

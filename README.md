@@ -15,18 +15,17 @@ Install the package via composer:
 composer require lancodev/laravel-analytics
 ```
 
-Publish and run the migrations:
-
-```bash
-php artisan vendor:publish --tag="laravel-analytics-migrations"
-php artisan migrate
-```
-
 Publish the components and views:
 
 ```bash
 php artisan vendor:publish --tag="laravel-analytics-components"
-php artisan vendor:publish --tag="laravel-analytics-views"
+php artisan vendor:publish --tag="analytics-views"
+```
+
+Run the package's install command:
+
+```bash
+php artisan laravel-analytics:install
 ```
 
 ## Usage
