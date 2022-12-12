@@ -13,7 +13,8 @@ class Analytics extends Component
     public function __construct($trackable = null)
     {
         $agent = new Agent();
-        $this->pageView = PageView::make([
+
+        $this->pageView = new PageView([
             'uri' => request()->path(),
             'session' => session()->getId(),
             'source' => request()->headers->get('referer'),
