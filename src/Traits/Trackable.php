@@ -1,6 +1,6 @@
 <?php
 
-namespace Kylekanderson\LaravelAnalytics\Traits;
+namespace Lancodev\LaravelAnalytics\Traits;
 
 trait Trackable
 {

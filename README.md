@@ -1,9 +1,9 @@
 # This is my package laravel-analytics
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/kylekanderson/laravel-analytics.svg?style=flat-square)](https://packagist.org/packages/kylekanderson/laravel-analytics)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/kylekanderson/laravel-analytics/run-tests?label=tests)](https://github.com/kylekanderson/laravel-analytics/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/kylekanderson/laravel-analytics/Fix%20PHP%20code%20style%20issues?label=code%20style)](https://github.com/kylekanderson/laravel-analytics/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/kylekanderson/laravel-analytics.svg?style=flat-square)](https://packagist.org/packages/kylekanderson/laravel-analytics)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/lancodev/laravel-analytics.svg?style=flat-square)](https://packagist.org/packages/lancodev/laravel-analytics)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/lancodev/laravel-analytics/run-tests?label=tests)](https://github.com/lancodev/laravel-analytics/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/lancodev/laravel-analytics/Fix%20PHP%20code%20style%20issues?label=code%20style)](https://github.com/lancodev/laravel-analytics/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/lancodev/laravel-analytics.svg?style=flat-square)](https://packagist.org/packages/lancodev/laravel-analytics)
 
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
 
@@ -20,7 +20,7 @@ We highly appreciate you sending us a postcard from your hometown, mentioning wh
 You can install the package via composer:
 
 ```bash
-composer require kylekanderson/laravel-analytics
+composer require lancodev/laravel-analytics
 ```
 
 You can publish and run the migrations with:
@@ -52,8 +52,8 @@ php artisan vendor:publish --tag="laravel-analytics-views"
 ## Usage
 
 ```php
-$laravelAnalytics = new Kylekanderson\LaravelAnalytics();
-echo $laravelAnalytics->echoPhrase('Hello, Kylekanderson!');
+$laravelAnalytics = new Lancodev\LaravelAnalytics();
+echo $laravelAnalytics->echoPhrase('Hello, Lancodev!');
 ```
 
 ## Testing
@@ -76,7 +76,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 
 ## Credits
 
-- [Kyle Anderson](https://github.com/kylekanderson)
+- [Kyle Anderson](https://github.com/lancodev)
 - [All Contributors](../../contributors)
 
 ## License

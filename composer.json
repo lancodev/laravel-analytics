@@ -1,12 +1,14 @@
 {
-    "name": "kylekanderson/laravel-analytics",
-    "description": "This is my package laravel-analytics",
+    "name": "lancodev/laravel-analytics",
+    "description": "Laravel Analytics",
     "keywords": [
-        "kylekanderson",
+        "lancodev",
+        "lancodev",
+        "analytics",
         "laravel",
         "laravel-analytics"
     ],
-    "homepage": "https://github.com/kylekanderson/laravel-analytics",
+    "homepage": "https://github.com/lancodev/laravel-analytics",
     "license": "MIT",
     "authors": [
         {
@@ -36,13 +38,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Kylekanderson\\LaravelAnalytics\\": "src",
-            "Kylekanderson\\LaravelAnalytics\\Database\\Factories\\": "database/factories"
+            "Lancodev\\LaravelAnalytics\\": "src",
+            "Lancodev\\LaravelAnalytics\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Kylekanderson\\LaravelAnalytics\\Tests\\": "tests"
+            "Lancodev\\LaravelAnalytics\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -62,10 +64,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Kylekanderson\\LaravelAnalytics\\LaravelAnalyticsServiceProvider"
+                "Lancodev\\LaravelAnalytics\\LaravelAnalyticsServiceProvider"
             ],
             "aliases": {
-                "LaravelAnalytics": "Kylekanderson\\LaravelAnalytics\\Facades\\LaravelAnalytics"
+                "LaravelAnalytics": "Lancodev\\LaravelAnalytics\\Facades\\LaravelAnalytics"
             }
         }
     },

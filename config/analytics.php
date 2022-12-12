@@ -1,6 +1,6 @@
 <?php
 
-// config for Kylekanderson/LaravelAnalytics
+// config for Lancodev/LaravelAnalytics
 return [
 
 ];

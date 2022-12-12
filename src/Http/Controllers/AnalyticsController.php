@@ -1,9 +1,9 @@
 <?php
 
-namespace Kylekanderson\LaravelAnalytics\Http\Controllers;
+namespace Lancodev\LaravelAnalytics\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Kylekanderson\LaravelAnalytics\PageView;
+use Lancodev\LaravelAnalytics\PageView;
 
 class AnalyticsController
 {

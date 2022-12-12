@@ -1,5 +1,5 @@
 <?php
 
-use Kylekanderson\LaravelAnalytics\Tests\TestCase;
+use Lancodev\LaravelAnalytics\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);

@@ -1,6 +1,6 @@
 <?php
 
-namespace Kylekanderson\LaravelAnalytics\Commands;
+namespace Lancodev\LaravelAnalytics\Commands;
 
 use Illuminate\Console\Command;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Kylekanderson\LaravelAnalytics\Database\Factories;
+namespace Lancodev\LaravelAnalytics\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 

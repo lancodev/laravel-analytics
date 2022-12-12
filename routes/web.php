@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use Kylekanderson\LaravelAnalytics\Http\Controllers\AnalyticsController;
+use Lancodev\LaravelAnalytics\Http\Controllers\AnalyticsController;
 
 Route::prefix('analytics')->group(function () {
     Route::post('/enter', [AnalyticsController::class, 'registerPageEnter']);

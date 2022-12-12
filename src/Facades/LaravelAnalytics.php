@@ -1,16 +1,16 @@
 <?php
 
-namespace Kylekanderson\LaravelAnalytics\Facades;
+namespace Lancodev\LaravelAnalytics\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
- * @see \Kylekanderson\LaravelAnalytics\LaravelAnalytics
+ * @see \Lancodev\LaravelAnalytics\LaravelAnalytics
  */
 class LaravelAnalytics extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return \Kylekanderson\LaravelAnalytics\LaravelAnalytics::class;
+        return \Lancodev\LaravelAnalytics\LaravelAnalytics::class;
     }
 }

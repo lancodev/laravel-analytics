@@ -1,10 +1,10 @@
 <?php
 
-namespace Kylekanderson\LaravelAnalytics;
+namespace Lancodev\LaravelAnalytics;
 
-use Kylekanderson\LaravelAnalytics\Components\Analytics;
-use Kylekanderson\LaravelAnalytics\Components\Chart;
-use Kylekanderson\LaravelAnalytics\Components\Dashboard;
+use Lancodev\LaravelAnalytics\Components\Analytics;
+use Lancodev\LaravelAnalytics\Components\Chart;
+use Lancodev\LaravelAnalytics\Components\Dashboard;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
@@ -29,7 +29,7 @@ class LaravelAnalyticsServiceProvider extends PackageServiceProvider
                 $command
                     ->publishMigrations()
                     ->askToRunMigrations()
-                    ->askToStarRepoOnGitHub('kylekanderson/laravel-analytics');
+                    ->askToStarRepoOnGitHub('lancodev/laravel-analytics');
             });
     }
 }

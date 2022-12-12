@@ -1,9 +1,9 @@
 <?php
 
-namespace Kylekanderson\LaravelAnalytics\Tests;
+namespace Lancodev\LaravelAnalytics\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Kylekanderson\LaravelAnalytics\LaravelAnalyticsServiceProvider;
+use Lancodev\LaravelAnalytics\LaravelAnalyticsServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Kylekanderson\\LaravelAnalytics\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'Lancodev\\LaravelAnalytics\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 

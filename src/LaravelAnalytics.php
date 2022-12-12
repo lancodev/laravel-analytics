@@ -1,6 +1,6 @@
 <?php
 
-namespace Kylekanderson\LaravelAnalytics;
+namespace Lancodev\LaravelAnalytics;
 
 class LaravelAnalytics
 {

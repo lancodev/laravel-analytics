@@ -1,6 +1,6 @@
 <?php
 
-namespace Kylekanderson\LaravelAnalytics\Components;
+namespace Lancodev\LaravelAnalytics\Components;
 
 use Illuminate\View\Component;
 
