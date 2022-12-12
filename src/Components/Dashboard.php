@@ -8,7 +8,9 @@ use Lancodev\LaravelAnalytics\PageView;
 class Dashboard extends Component
 {
     public $uriVisits;
+
     public $browsers;
+
     public $devices;
 
     public function __construct()
