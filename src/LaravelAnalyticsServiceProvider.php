@@ -28,7 +28,6 @@ class LaravelAnalyticsServiceProvider extends PackageServiceProvider
             ->hasInstallCommand(function (InstallCommand $command) {
                 $command
                     ->publishMigrations()
-                    ->askToRunMigrations()
                     ->askToStarRepoOnGitHub('lancodev/laravel-analytics');
             });
     }
