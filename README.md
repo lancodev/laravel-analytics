@@ -25,7 +25,7 @@ php artisan vendor:publish --tag="analytics-views"
 Run the package's install command:
 
 ```bash
-php artisan laravel-analytics:install
+php artisan analytics:install
 ```
 
 ## Usage
