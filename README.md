@@ -70,7 +70,15 @@ This will add the necessary JavaScript to your application.
 
 ### Analytics Dashboard
 
-The package also provides a simple dashboard to view the analytics for your application. To access the dashboard, visit the `/analytics-dashboard` route.
+The package also provides a simple dashboard component that can be used to display analytics for your application.
+
+The dashboard can be added to any view by adding the following:
+
+```html
+<x-analytics-dashboard />
+```
+
+This will add the following to your page:
 
 ![analyticsdashboardscreenshot.png](screenshots/analytics-dashboard-screenshot.png)
 
