@@ -9,44 +9,70 @@ This package provides a simple way to capture site analytics within your existin
 
 ## Installation
 
-You can install the package via composer:
+Install the package via composer:
 
 ```bash
 composer require lancodev/laravel-analytics
 ```
 
-You can publish and run the migrations with:
+Publish and run the migrations:
 
 ```bash
 php artisan vendor:publish --tag="laravel-analytics-migrations"
 php artisan migrate
 ```
 
-You can publish the config file with:
+Publish the components and views:
 
 ```bash
-php artisan vendor:publish --tag="laravel-analytics-config"
-```
-
-This is the contents of the published config file:
-
-```php
-return [
-];
-```
-
-Optionally, you can publish the views using
-
-```bash
+php artisan vendor:publish --tag="laravel-analytics-components"
 php artisan vendor:publish --tag="laravel-analytics-views"
 ```
 
 ## Usage
 
+### Trackable Trait
+
+The package provides an optional `Trackable` trait that can be used to assign page view analytics to a model. The trait provides a `pageViews` relationship that can be used to retrieve the page views for the model.
+
+This would typically be implemented by the `User` model. However, it could also be implemented by any other model that you wish to track page views for.
+
+To use the trait, simply add the following to your model:
+
 ```php
-$laravelAnalytics = new Lancodev\LaravelAnalytics();
-echo $laravelAnalytics->echoPhrase('Hello, Lancodev!');
+namespace App\Models;
+
+use Lancodev\LaravelAnalytics\Traits\Trackable;
+
+class User
+{
+    use Trackable;
+}
 ```
+
+### Tracking
+
+To begin tracking analytics, add the `<x-analytics-analytics />` component to your layout file(s).
+This will add the necessary JavaScript to your application.
+
+```html
+<html>
+    <head>
+        <title>My Application</title>
+    </head>
+    <body>
+        ``` content ```
+
+        <x-analytics-analytics />
+    </body>
+</html>
+```
+
+### Analytics Dashboard
+
+The package also provides a simple dashboard to view the analytics for your application. To access the dashboard, visit the `/analytics-dashboard` route.
+
+![analyticsdashboardscreenshot.png](screenshots/analytics-dashboard-screenshot.png)
 
 ## Testing
 
