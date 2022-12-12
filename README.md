@@ -67,6 +67,12 @@ This will add the necessary JavaScript to your application.
 </html>
 ```
 
+The `<x-analytics-analytics />` component accepts the following props:
+
+* trackable: the morphable entity to track
+  * Example: `<x-analytics-analytics :trackable="auth()->user()" />`
+  * This will associate all page view analytics with the current user
+
 ### Analytics Dashboard
 
 The package also provides a simple dashboard component that can be used to display analytics for your application.
