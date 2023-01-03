@@ -2,6 +2,7 @@
 
 namespace Lancodev\LaravelAnalytics\Http\Controllers;
 
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Lancodev\LaravelAnalytics\PageView;
 
@@ -23,8 +24,9 @@ class AnalyticsController
         $pageView = PageView::find($request->pageViewId);
 
         if ($pageView) {
+            $timestamp = Carbon::createFromTimestampMs($request->timestamp);
             $pageView->update([
-                'left_at' => now(),
+                'left_at' => $timestamp,
             ]);
         }
     }

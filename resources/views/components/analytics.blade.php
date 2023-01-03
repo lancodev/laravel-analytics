@@ -4,6 +4,7 @@
             let data = new FormData();
             data.append('_token', '{{ csrf_token() }}');
             data.append('pageViewId', '{{ $pageView->id }}');
+            data.append('timestamp', Date.now());
             if (document.visibilityState === 'visible') {
                 // Log data to analytics
                 navigator.sendBeacon('/analytics/enter', data);
